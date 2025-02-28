@@ -1,0 +1,461 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Swity Shinde - Promotions and Red Carpet</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                <style>
+                    body {
+                        margin: 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        background-color: #ffffff;
+                        color: #333;
+                    }
+            
+                    header{
+                        background: linear-gradient(135deg, #ff8afb, #9d509e);
+                        color: white;
+                        padding: 1rem;
+                        text-align: center;
+                    }
+                    #special {
+                        background: linear-gradient(135deg, #ff8afb, #9d509e);
+                        color: white;
+                        padding: 1rem;
+                        margin: 0;
+                        font-size: 3.0rem;
+                        text-align: center;
+                        position: sticky;
+                        z-index: 1000;
+                        top: 0;
+                    }
+                    h2 {
+            text-align: center;
+            font-size: 35px;
+        }
+        header {
+            background: linear-gradient(135deg, #ff8afb, #9d509e);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+        }
+        header p {
+            font-size: 1.8rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px 0;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 1rem;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #f3f3f3;
+        }
+            
+                    /* Celebrity Section */
+                    .celebrity-container {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 72px;
+                        padding: 20px;
+                    }
+            
+                    .celebrity-dropdown {
+                        position: relative;
+                        text-align: center;
+                    }
+            
+                    .celebrity-dropdown a {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #9d509e;
+                        padding: 10px 50px;
+                        display: inline-block;
+                        border: 2px solid #9d509e;
+                        border-radius: 5px;
+                        transition: all 0.3s ease-in-out;
+                    }
+            
+                    .celebrity-dropdown a:hover {
+                        background-color: #9d509e;
+                        color: white;
+                    }
+            
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: white;
+                        padding: 15px;
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                        border-radius: 5px;
+                        width: 90%;
+                        max-width: 1000px;
+                        z-index: 900;
+                        white-space: nowrap;
+                        overflow-x: auto;
+                    }
+            
+                    .celebrity-dropdown:hover .dropdown-content {
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                    }
+            
+                    .dropdown-content img {
+                        width: 200px;
+                        height: 72%;
+                        border-radius: 8px;
+                        border: 3px solid #9d509e;
+                        transition: transform 0.3s ease-in-out;
+                    }
+            
+                    .dropdown-content img:hover {
+                        transform: scale(1.1);
+                    }
+                    .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+        }
+                    .card {
+                        margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 300px;
+        }
+        .card img {
+            max-width: 400px;
+            max-height: 400px;
+            border-radius: 4px;
+            border : 4px solid black;
+        }
+        
+            footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        .social-media {
+            display: flex;
+            gap: 20px;
+        }
+        .social-media a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .social-media a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .social-media a i {
+            pointer-events: none;
+        }
+        footer a {
+            color: #4b79a1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-card {
+                flex: 1 1 100%;
+            }
+        
+                </style>
+            </head>
+            <body>
+                <header>
+                    <h1>𝑺𝒘𝒊𝒕𝒚 𝑺𝒉𝒊𝒏𝒅𝒆</h1>
+                    <p>Fashion Designer | Stylist</p>
+                </header>
+                
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="editorials.html">Editorials</a>
+                    <a href="promotions & red carpet.html">Promotions And Red Carpet</a>
+                </nav>
+                </nav>
+                <h1 id="special">Promotions & Red Carpet</h1>
+                <div class="celebrity-container">
+                    <div class="celebrity-dropdown">
+                        <a href="#">Amy Jackson ▾</a>
+                        <div class="dropdown-content">
+                            <img src="parc/Promotions-RedCarpet/Amy Jackson/2E97462B-B7B2-4C58-995F-881137F23BEC.jpeg">
+                            <img src="parc/Promotions-RedCarpet/Amy Jackson/8A3A6D70-81C4-43AD-BDFA-D0A3FFE6A5C7.jpeg">
+                            <img src="parc/Promotions-RedCarpet/Amy Jackson/36A6B4CD-F6E4-4C3A-9988-1A7D41A1CDC3.jpeg">
+                            <img src="parc/Promotions-RedCarpet/Amy Jackson/91D2171C-C021-4F38-8124-D47789E3C799.jpeg">
+                            <img src="parc/Promotions-RedCarpet/Amy Jackson/06139B1A-3126-4B77-B8D2-24F8A0D1362F.jpeg">
+                        </div>
+                    </div>
+        
+                    <div class="celebrity-dropdown">
+                        <a href="#">Ekta Rajvani ▾</a>
+                        <div class="dropdown-content">
+                            <img src="parc/Promotions-RedCarpet/Ekta Rajani x Levis/Ekta Rajani for Levis 1.jpg">
+                            <img src="parc/Promotions-RedCarpet/Ekta Rajani x Levis/Ekta Rajani for Levis.jpg">
+                            <img src="parc/Promotions-RedCarpet/Ekta Rajani x Levis/Ekta Rajani for Levis 2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="celebrity-dropdown">
+                        <a href="#">Janhavi Kapoor ▾</a>
+                        <div class="dropdown-content">
+                            <img src="parc/Promotions-RedCarpet/Janhvi Kapoor/IMG_0852.JPG">
+                            <img src="parc/Promotions-RedCarpet/Janhvi Kapoor/IMG_0853.JPG">
+                            <img src="parc/Promotions-RedCarpet/Janhvi Kapoor/IMG_0854.JPG">
+                            <img src="parc/Promotions-RedCarpet/Janhvi Kapoor/IMG_0858.JPG">
+                            <img src="parc/Promotions-RedCarpet/Janhvi Kapoor/IMG_0857.JPG">
+                            <img src="parc/Promotions-RedCarpet/Janhvi Kapoor/IMG_0855.JPG">
+                            <img src="parc/Promotions-RedCarpet/Janhvi Kapoor/IMG_0859.JPG">
+                        </div>
+                    </div>
+                    <div class="celebrity-dropdown">
+                        <a href="#">Shanaya Kapoor ▾</a>
+                        <div class="dropdown-content">
+                            <img src="parc/Promotions-RedCarpet/Shanaya Kapoor/IMG_7184.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shanaya Kapoor/IMG_7185.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shanaya Kapoor/IMG_7186.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shanaya Kapoor/IMG_7187.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shanaya Kapoor/IMG_7189.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shanaya Kapoor/IMG_7190.JPG">
+                        </div>
+                    </div>
+                    <div class="celebrity-dropdown">
+                        <a href="#">Shilpa Shetty ▾</a>
+                        <div class="dropdown-content">
+                            <img src="parc/Promotions-RedCarpet/Shilpa Shetty/IMG_5730.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shilpa Shetty/IMG_5731.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shilpa Shetty/IMG_5735.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shilpa Shetty/IMG_5733.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shilpa Shetty/IMG_5732.JPG">
+                            <img src="parc/Promotions-RedCarpet/Shilpa Shetty/IMG_5736.JPG">
+                        </div>
+                    </div>
+                    <div class="celebrity-dropdown">
+                        <a href="#">Ananya Pandey ▾</a>
+                        <div class="dropdown-content">
+                            <img src="parc/Promotions-RedCarpet/Swarovski feat. Ananya Panday/4C44B83F-46BE-4D7C-9B56-07629A6EB043.jpg">
+                            <img src="parc/Promotions-RedCarpet/Swarovski feat. Ananya Panday/513BD9C0-DE81-46DF-82D0-A6AAB53C9E45.jpg">
+                            <img src="parc/Promotions-RedCarpet/Swarovski feat. Ananya Panday/77268C10-49A8-4FE1-B409-095A8AC8DB83.jpg">
+                            <img src="parc/Promotions-RedCarpet/Swarovski feat. Ananya Panday/9020DA3C-929F-48F0-B16B-6FB5653FEE44.jpg">
+                            <img src="parc/Promotions-RedCarpet/Swarovski feat. Ananya Panday/EB648DD6-7152-4F0C-8C50-6ACA800F34FD.jpg">
+                            <img src="parc/Promotions-RedCarpet/Swarovski feat. Ananya Panday/F6B2FF00-9F69-4F4D-8DF7-AF71FB7123F0.jpg">
+                        </div>
+                    </div>
+                    <div class="celebrity-dropdown">
+                        <a href="#">Tamannaah Bhatia ▾</a>
+                        <div class="dropdown-content">
+                            <img src="parc/Promotions-RedCarpet/Tamannaah Bhatia/Helen Anthony/IMG_4840.JPG">
+                            <img src="parc/Promotions-RedCarpet/Tamannaah Bhatia/Helen Anthony/IMG_4842.JPG">
+                            <img src="parc/Promotions-RedCarpet/Tamannaah Bhatia/Michael Kors Collection/a08f9d59-93f4-4112-9bb3-b4afaed15a80.jpg">
+                            <img src="parc/Promotions-RedCarpet/Tamannaah Bhatia/Michael Kors Collection/dfdf82de-7d46-44fc-befc-afe440a4176f.jpg">
+                            <img src="parc/Promotions-RedCarpet/Tamannaah Bhatia/Self Portrait/8FA8E985-D6B6-4784-8848-9A78DB28DED0.jpg">
+                            <img src="parc/Promotions-RedCarpet/Tamannaah Bhatia/Self Portrait/F64F0AC7-2342-4B34-8436-84A1FE18F81B.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+<br><br>
+                <div class="image-container">
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/051f14fb-3652-4580-a36b-9db339161af0.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/1fa48f3a-9828-4fdb-93f6-4ad39c89d196.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/280a762a-4c34-431d-bc5a-9e0eb03826cd.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/2919f227-9254-41d4-8671-ab1b2ed59ac7.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/2a118628-88e6-4d3c-b3c9-a09b48d054ea.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/2dedf57f-e868-4a35-b6e3-ac81f4e35264.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/44A2AE03-6B87-47BE-889B-1D5330C22997.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/47bceb4a-0790-44e0-8dac-0e0b51d83a07.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/546afd59-9c5c-4e19-b20b-128565676c5b.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/5a4756c0-d09b-46ed-9ccf-3f8ad0b0b311.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/5bedab55-9cb5-44d9-8986-b1ebc25d4fc6.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/5c0073ba-50f0-4faa-b1da-6fc21bf9d286.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/5ff2a48a-71a9-46ef-94ec-ed12925fb118.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/79da3447-7b9a-4fea-9e3d-69788a3cb449.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/7e374b60-6c3a-4dcf-ab27-249144b73128.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/9117ce40-ffc8-4163-99dd-ff8a6186d768.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/99ed1ea0-3c23-4a9e-b24c-db7aa250a9b8.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/9d8e6040-2d13-443c-b267-1954bd28bf19.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/a411e833-3b2f-46a7-8d88-828d30af72c1.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/9ed21066-3030-46fa-9f45-7d2af38ac6d8.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/a7995c12-247d-4b81-9499-a8437b544c77.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/a9df8c29-be74-49e5-b643-b7cdd96f7d53.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/acb58e2e-7602-4d67-aa39-cdbabf34f381.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    <div class="card">
+                        <img src="parc/Promotions-RedCarpet/" >
+                    </div>
+                    </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const dropdowns = document.querySelectorAll(".celebrity-dropdown");
+            
+                        dropdowns.forEach((dropdown) => {
+                            const toggle = dropdown.querySelector(".dropdown-toggle");
+                            const content = dropdown.querySelector(".dropdown-content");
+            
+                            toggle.addEventListener("click", function (event) {
+                                event.stopPropagation();
+            
+                                // Close all other dropdowns
+                                document.querySelectorAll(".dropdown-content").forEach((dropdown) => {
+                                    if (dropdown !== content) {
+                                        dropdown.style.display = "none";
+                                    }
+                                });
+            
+                                // Toggle the clicked dropdown
+                                content.style.display = content.style.display === "flex" ? "none" : "flex";
+                            });
+                        });
+            
+                        // Close dropdown when clicking outside
+                        document.addEventListener("click", function () {
+                            document.querySelectorAll(".dropdown-content").forEach((dropdown) => {
+                                dropdown.style.display = "none";
+                            });
+                        });
+                    });
+                </script>
+                <div class="social-media" id="contact">
+                    <a href="https://www.instagram.com/swityshinde/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.x.com/swityshinde" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/SwityShinde4/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/harshada-shinde-741b8511b" target="_blank" aria-label="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                
+                <footer>
+                    <p> 2024 Swity Shinde. Built with ❤ by <a href="https://github.com/kunal-shetty">Kunal Shetty</a>.</p>
+                </footer>
+                
+            </body>
+            </html>
+            

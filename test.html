@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Show Image</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .image {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container:hover .image {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        Hover over me
+        <img src="https://via.placeholder.com/200" alt="Hover Image" class="image">
+    </div>
+
+</body>
+</html>
